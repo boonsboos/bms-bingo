@@ -17,9 +17,22 @@ class RNG {
 
         return this.state;
     }
+
+    shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
 }
 
-let seed = Date.now();
+let seed = 0;
+
+let date = new Date();
+date.setUTCHours(0, 0, 0, 0);
+
+seed = date.getTime();
 
 if (globalThis.location.search != "") {
     const params = new URLSearchParams(globalThis.window.search);
@@ -68,7 +81,7 @@ let topics = [
 ];
 
 let pickedTopics = [];
-for (let i = 0; i < 25; i++) {
+for (let i = 0; i < 24; i++) {
     const topicsIndex = Math.abs(rng.next()) % topics.length
 
     pickedTopics.push(topics[topicsIndex]);
@@ -77,12 +90,23 @@ for (let i = 0; i < 25; i++) {
 
 let bingoSpaces = document.getElementById("bingo-card")
 
+rng.shuffleArray(pickedTopics);
+
+pickedTopics = [...pickedTopics.slice(0, 12), "free space", ...pickedTopics.slice(12)]
+
 for (let i = 0; i < 25; i++) {
     let child = document.createElement("div")
-    child.innerText = pickedTopics[i]
 
-    child.addEventListener('click', ev => {
-        child.classList.contains("checked") ? child.classList.remove("checked") : child.classList.add("checked")
-    });
+    child.innerText = pickedTopics[i];
+
+    // free space can't be checked
+    if (i === 12) {
+        child.style.border = 0;
+    } else {
+        child.addEventListener('click', _ => {
+            child.classList.contains("checked") ? child.classList.remove("checked") : child.classList.add("checked")
+        });
+    }
+
     bingoSpaces.appendChild(child)
 }

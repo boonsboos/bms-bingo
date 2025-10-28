@@ -3,6 +3,8 @@ export let commonTopics = [
     "googly eyes",
     "rag is the only AAA",
     "full combo",
+    "hard clear",
+    "random trainer"
 ];
 
 export let likelyTopics = [
@@ -13,7 +15,9 @@ export let likelyTopics = [
     "overjoy table slander",
     "pig pepsi",
     "toilet break",
-    "manly scream"
+    "manly scream",
+    "yuyuko twerks",
+    "cold hands"
 ];
 
 export let maybeTopics = [
@@ -30,7 +34,9 @@ export let maybeTopics = [
     "IR rank 1",
     "polish goon cave",
     "chatter needs to play more",
-    "nyannurs dislikes a song"
+    "nyannurs dislikes a song",
+    "FIRST COMES SCRATCHING",
+    "Xa",
 ];
 
 export let rarelyTopics = [
@@ -38,13 +44,12 @@ export let rarelyTopics = [
     "seiryu card",
     "SNYK",
     "toby snipe",
-    "FIRST COMES SCRATCHING",
-    "Xa",
+    "1 OK",
     "game gets the middle finger",
     "bms god in chat",
     "face reveal!!!",
     "sound only bga",
-    "nyannurs trvthnvke",
+    "nyannurs truthnuke",
     "dropped bachi",
     "10+ people raid"
 ];
@@ -52,9 +57,10 @@ export let rarelyTopics = [
 export let legendaryTopics = [
     "forgot to start streaming award",
     "kkm snipe",
-    "DFC",
+    "DFC"
 ];
 
 export let ultimateTopics = [
-    "rag snipe"
+    "rag snipe",
+    "riskyframe appearence"
 ];

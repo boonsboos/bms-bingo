@@ -48,7 +48,9 @@ for (let i = 0; i < 25; i++) {
             pickTopic(legendaryTopics, 4);
         } else if (chance < 333 && rarelyTopics.length > 0) {
             pickTopic(rarelyTopics, 3);
-        } else {
+        } else if (chance > 900){
+            pickTopic(commonTopics, 0);
+        } else 
             pickTopic(maybeTopics, 2);
         }
     }

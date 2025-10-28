@@ -12,7 +12,8 @@ export let likelyTopics = [
     "xuser says DAIKO",
     "overjoy table slander",
     "pig pepsi",
-    "toilet break"
+    "toilet break",
+    "manly scream"
 ];
 
 export let maybeTopics = [
@@ -24,11 +25,12 @@ export let maybeTopics = [
     "continuous bombardment",
     "bottle falls off desk",
     "wriggle archive is recommended",
-    "chatter requests osu map",
+    "new chatter requests osu map",
     "LR2 crashes",
     "IR rank 1",
     "polish goon cave",
     "chatter needs to play more",
+    "nyannurs dislikes a song"
 ];
 
 export let rarelyTopics = [
@@ -43,7 +45,8 @@ export let rarelyTopics = [
     "face reveal!!!",
     "sound only bga",
     "nyannurs trvthnvke",
-    "dropped bachi"
+    "dropped bachi",
+    "10+ people raid"
 ];
 
 export let legendaryTopics = [

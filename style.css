@@ -38,13 +38,43 @@ body {
 }
 
 .checked {
-  background-color: #a22 !important;
-  color: #fff !important;
   border-width: 3px;
+  font-weight: 400;
 }
 
 .checked:hover {
-  background-color: #700 !important;
+  filter: saturate(50%);
+}
+
+.checked.rarity0 {
+  background-color: indianred !important;
+  color: #fff !important;
+}
+
+.checked.rarity1 {
+  background-color: orange !important;
+  color: #222 !important;
+  border-width: 3px;
+}
+
+.checked.rarity2 {
+  background-color: yellow !important;
+  color: #222 !important;
+}
+
+.checked.rarity3 {
+  background-color: greenyellow !important;
+  color: #222;
+}
+
+.checked.rarity4 {
+  background-color: lightblue !important;
+  color: #222;
+}
+
+.checked.rarity5 {
+  background-color: blueviolet !important;
+  color: #222;
 }
 
 a {

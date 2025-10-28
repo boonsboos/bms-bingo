@@ -40,11 +40,11 @@ export let maybeTopics = [
 ];
 
 export let rarelyTopics = [
-    "AAA-1",
     "seiryu card",
     "SNYK",
     "toby snipe",
     "1 OK",
+    "tied PB",
     "game gets the middle finger",
     "bms god in chat",
     "face reveal!!!",
@@ -56,6 +56,7 @@ export let rarelyTopics = [
 
 export let legendaryTopics = [
     "forgot to start streaming award",
+    "AAA-1",
     "kkm snipe",
     "DFC"
 ];

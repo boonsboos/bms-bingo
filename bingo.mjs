@@ -54,10 +54,6 @@ for (let i = 0; i < 25; i++) {
     }
 }
 
-if (pickedTopics.size < 25) {
-    alert("shit's fucked. ping boons");
-}
-
 let bingoSpaces = document.getElementById("bingo-card")
 
 let iterator = pickedTopics.entries();

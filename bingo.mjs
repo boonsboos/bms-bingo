@@ -36,7 +36,7 @@ for (let i = 0; i < 25; i++) {
         else
             pickTopic(likelyTopics, 1)
     } else if (likelyMaybeIdxs.includes(i)) {
-        if (rng.next() % 3 > 0 && likelyTopics.length > 0)
+        if (rng.next() % 5 > 2 && likelyTopics.length > 0)
             pickTopic(likelyTopics, 1)
         else
             pickTopic(maybeTopics, 2)

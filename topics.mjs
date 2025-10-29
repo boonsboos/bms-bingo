@@ -1,5 +1,5 @@
 export let commonTopics = [
-    "vape hit",
+    "vepe hit",
     "googly eyes",
     "rag is the only AAA",
     "full combo",

@@ -11,9 +11,9 @@ export class Save {
             // reset save if the day has changed
             if (this.date < todaysDate || Number.isNaN(this.date)) {
                 localStorage.removeItem("saveFile"); // yes this is a hack but it works so /shrug
-                
+            } else { 
+                return;
             }
-            return;
         }
 
         this.date = todaysDate

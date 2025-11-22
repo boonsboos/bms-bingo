@@ -43,7 +43,7 @@ body {
 }
 
 .checked:hover {
-  filter: saturate(50%);
+  filter: grayscale(50%) !important;
 }
 
 .checked.rarity0 {
@@ -64,17 +64,17 @@ body {
 
 .checked.rarity3 {
   background-color: greenyellow !important;
-  color: #222;
+  color: #222 !important;
 }
 
 .checked.rarity4 {
   background-color: lightblue !important;
-  color: #222;
+  color: #222 !important;
 }
 
 .checked.rarity5 {
   background-color: blueviolet !important;
-  color: #222;
+  color: #222 !important;
 }
 
 a {
@@ -88,5 +88,35 @@ a:hover {
 @media only screen and (max-width: 768px) {
   #bingo-card {
     width: 700px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #eee;
+  }
+
+  a:hover {
+    color: #ccf;
+  }
+
+  body {
+    color: #eee;
+    background-color: #222;
+  }
+
+  #bingo-card {
+    background-color: #333;
+    border: 1px solid #000;
+  }
+
+  #bingo-card > div {
+    background-color: #000;
+    border-color: #eee;
+  }
+
+  #bingo-card > div:hover {
+    background-color: #444;
+    color: #eee;
   }
 }
